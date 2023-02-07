@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="6" total="10" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="146542" started-at="2023-01-31T18:47:04 IST" finished-at="2023-01-31T18:49:31 IST">
+    <groups>
+      <group name="Sanity">
+        <method signature="CashierReceiptPageTest.verifyReceiptsConfirmationByCashier(java.util.HashMap)[pri:0, instance:com.dcpl.testcase.CashierReceiptPageTest@8b87145]" name="verifyReceiptsConfirmationByCashier" class="com.dcpl.testcase.CashierReceiptPageTest"/>
+        <method signature="OrderConfirmationPageTest.verifyOrderConfirmationByCashier(java.util.HashMap)[pri:0, instance:com.dcpl.testcase.OrderConfirmationPageTest@6483f5ae]" name="verifyOrderConfirmationByCashier" class="com.dcpl.testcase.OrderConfirmationPageTest"/>
+        <method signature="StoreHeadConfirmationPageTest.verifyingOrderConfirmationByStoreHead(java.util.HashMap)[pri:0, instance:com.dcpl.testcase.StoreHeadConfirmationPageTest@b9afc07]" name="verifyingOrderConfirmationByStoreHead" class="com.dcpl.testcase.StoreHeadConfirmationPageTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="CashierReceiptPageTest.verifyReceiptsConfirmationByCashier(java.util.HashMap)[pri:0, instance:com.dcpl.testcase.CashierReceiptPageTest@8b87145]" name="verifyReceiptsConfirmationByCashier" class="com.dcpl.testcase.CashierReceiptPageTest"/>
+        <method signature="CreateCustomerOrderTest.verifyCustomerOrderOrderKindNo(java.util.HashMap)[pri:0, instance:com.dcpl.testcase.CreateCustomerOrderTest@4bb4de6a]" name="verifyCustomerOrderOrderKindNo" class="com.dcpl.testcase.CreateCustomerOrderTest"/>
+        <method signature="OrderConfirmationPageTest.verifyOrderConfirmationByCashier(java.util.HashMap)[pri:0, instance:com.dcpl.testcase.OrderConfirmationPageTest@6483f5ae]" name="verifyOrderConfirmationByCashier" class="com.dcpl.testcase.OrderConfirmationPageTest"/>
+        <method signature="StoreHeadConfirmationPageTest.verifyingOrderConfirmationByStoreHead(java.util.HashMap)[pri:0, instance:com.dcpl.testcase.StoreHeadConfirmationPageTest@b9afc07]" name="verifyingOrderConfirmationByStoreHead" class="com.dcpl.testcase.StoreHeadConfirmationPageTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="RegressionTest" duration-ms="146542" started-at="2023-01-31T18:47:04 IST" finished-at="2023-01-31T18:49:31 IST">
+      <class name="com.dcpl.testcase.CashierReceiptPageTest">
+        <test-method status="PASS" signature="setUP(java.lang.String)[pri:0, instance:com.dcpl.testcase.CashierReceiptPageTest@8b87145]" name="setUP" is-config="true" duration-ms="5870" started-at="2023-01-31T18:48:14 IST" finished-at="2023-01-31T18:48:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="verifyReceiptsConfirmationByCashier(java.util.HashMap)[pri:0, instance:com.dcpl.testcase.CashierReceiptPageTest@8b87145]" name="verifyReceiptsConfirmationByCashier" duration-ms="11981" started-at="2023-01-31T18:48:20 IST" description="Verifying receipt confirmation by logging into cashier login page" data-provider="receiptsConfirmationPageData" finished-at="2023-01-31T18:48:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{cashierhrms_id=15, cashierpassword=Pass@123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReceiptsConfirmationByCashier -->
+        <test-method status="PASS" signature="closeWebApplication()[pri:0, instance:com.dcpl.testcase.CashierReceiptPageTest@8b87145]" name="closeWebApplication" is-config="true" duration-ms="6023" started-at="2023-01-31T18:48:32 IST" finished-at="2023-01-31T18:48:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebApplication -->
+      </class> <!-- com.dcpl.testcase.CashierReceiptPageTest -->
+      <class name="com.dcpl.testcase.StoreHeadConfirmationPageTest">
+        <test-method status="PASS" signature="setUP(java.lang.String)[pri:0, instance:com.dcpl.testcase.StoreHeadConfirmationPageTest@b9afc07]" name="setUP" is-config="true" duration-ms="4444" started-at="2023-01-31T18:49:05 IST" finished-at="2023-01-31T18:49:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="verifyingOrderConfirmationByStoreHead(java.util.HashMap)[pri:0, instance:com.dcpl.testcase.StoreHeadConfirmationPageTest@b9afc07]" name="verifyingOrderConfirmationByStoreHead" duration-ms="15254" started-at="2023-01-31T18:49:09 IST" description="Verifying store head order confirmation by logging into store head login page" data-provider="storeHeadConfirmationPageData" finished-at="2023-01-31T18:49:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fromday=31, password=Pass@123, orderno=, frommonth=Jan, orderstatus=Ready, tomonth=Jan, salesexecutive=Hashmi, fromyear=2023, today=31, hrms_id=11, toyear=2023}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingOrderConfirmationByStoreHead -->
+        <test-method status="PASS" signature="closeWebApplication()[pri:0, instance:com.dcpl.testcase.StoreHeadConfirmationPageTest@b9afc07]" name="closeWebApplication" is-config="true" duration-ms="6348" started-at="2023-01-31T18:49:24 IST" finished-at="2023-01-31T18:49:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebApplication -->
+      </class> <!-- com.dcpl.testcase.StoreHeadConfirmationPageTest -->
+      <class name="com.dcpl.testcase.OrderConfirmationPageTest">
+        <test-method status="PASS" signature="setUP(java.lang.String)[pri:0, instance:com.dcpl.testcase.OrderConfirmationPageTest@6483f5ae]" name="setUP" is-config="true" duration-ms="4616" started-at="2023-01-31T18:48:38 IST" finished-at="2023-01-31T18:48:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="verifyOrderConfirmationByCashier(java.util.HashMap)[pri:0, instance:com.dcpl.testcase.OrderConfirmationPageTest@6483f5ae]" name="verifyOrderConfirmationByCashier" duration-ms="14868" started-at="2023-01-31T18:48:43 IST" description="Verifying order confirmation page by logging into cashier login page" data-provider="OrderConfirmationPageData" finished-at="2023-01-31T18:48:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fromday=31, password=Pass@123, orderno=, frommonth=Jan, tomonth=Jan, salesexecutive=Hashmi, fromyear=2023, today=31, hrms_id=15, toyear=2023}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderConfirmationByCashier -->
+        <test-method status="PASS" signature="closeWebApplication()[pri:0, instance:com.dcpl.testcase.OrderConfirmationPageTest@6483f5ae]" name="closeWebApplication" is-config="true" duration-ms="6304" started-at="2023-01-31T18:48:58 IST" finished-at="2023-01-31T18:49:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebApplication -->
+      </class> <!-- com.dcpl.testcase.OrderConfirmationPageTest -->
+      <class name="com.dcpl.testcase.CreateCustomerOrderTest">
+        <test-method status="PASS" signature="readConfig()[pri:0, instance:com.dcpl.testcase.CreateCustomerOrderTest@4bb4de6a]" name="readConfig" is-config="true" duration-ms="389" started-at="2023-01-31T18:47:04 IST" finished-at="2023-01-31T18:47:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readConfig -->
+        <test-method status="PASS" signature="setUP(java.lang.String)[pri:0, instance:com.dcpl.testcase.CreateCustomerOrderTest@4bb4de6a]" name="setUP" is-config="true" duration-ms="15412" started-at="2023-01-31T18:47:07 IST" finished-at="2023-01-31T18:47:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="verifyCustomerOrderOrderKindNo(java.util.HashMap)[pri:0, instance:com.dcpl.testcase.CreateCustomerOrderTest@4bb4de6a]" name="verifyCustomerOrderOrderKindNo" duration-ms="45266" started-at="2023-01-31T18:47:23 IST" data-provider="createCustomerOrderPageData" finished-at="2023-01-31T18:48:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{customerContactNumber=9746764977, dueDateYear=2023, firstGiftVoucherNumber=23, subCategory=1, chequeDay=31, intimation=Yes, payAdvAmount=5000.00, chequeNumber=415263, type=Debit Card, vendorCode=BKK, password=Pass@123, intimationMode=Mail, deliveryAddress=Yes, cardBank=AXIS, occasiondate=31, lengthSearch=7.5", Pieces=1, cardAmount=25000.00, adjustmentNumber=6, customerLoyaltyCard=, metalColor=1, adjustType=Payment Voucher, orderKind=New Order-NO, cardExpiryMonth=3, customerName=Ali Hashmi, fromWeightRange=1, metalWeightType=Range, hookTypeSearch=U Hook, occasionyear=2023, customerID=8, jewelType=Necklace, expectedWeightRange=100, adjustmentAmount=1000.00, segmentType=Gold, cardNumber=4152639685, occasion=Self, chequeDDType=cheque, toWeightRange=100, cardBankName=Axis Bank, cardExpiryYear=2024, bankName=Axis Bank, hrms_id=75, polishTypeSearch=Matt Finish, skinPurity=1, nameOnCard=Hashmi, dueDateMonth=Jan, salesExecutiveID=4, accNumber=5263415296857485, occasionmonth=Jan, accHolderName=Hashmi, cardType=RUPAY, branchName=Banshankari, authID=41526, payModesOption1=Cash, chequeMonth=Jan, payModesOption2=ChequeDD, chequeAmount=5000.00, MultipleMode=No, chequeYear=2023, settingTypeSearch=Open Setting, dueDateDay=31, mainCategory=1, secondGiftVoucherNumber=24, payAdvOption=Yes, noOfGiftVouchers=2, printNameInBill=No, occasionRemarks=Automation testing, CashAmount=5000.00}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCustomerOrderOrderKindNo -->
+        <test-method status="PASS" signature="closeWebApplication()[pri:0, instance:com.dcpl.testcase.CreateCustomerOrderTest@4bb4de6a]" name="closeWebApplication" is-config="true" duration-ms="6079" started-at="2023-01-31T18:48:08 IST" finished-at="2023-01-31T18:48:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebApplication -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.dcpl.testcase.CreateCustomerOrderTest@4bb4de6a]" name="afterSuite" is-config="true" duration-ms="797" started-at="2023-01-31T18:49:31 IST" finished-at="2023-01-31T18:49:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.dcpl.testcase.CreateCustomerOrderTest -->
+    </test> <!-- RegressionTest -->
+  </suite> <!-- Suite -->
+</testng-results>

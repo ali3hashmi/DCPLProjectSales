@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener class-name="com.dcpl.utility.ListenerClass">
+		<listener class-name="com.dcpl.failedtestcases.RetryListenerClass"></listener>
+		</listener>
+	</listeners>
+	<test thread-count="5" name="RegressionTest">
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Regression"></include>
+			</run>
+		</groups>
+		<classes>
+			
+			<!--  <class name="com.dcpl.testcase.SalesLoginPageTest" />
+			<class name="com.dcpl.testcase.SalesHomePageTest" />
+			<class name="com.dcpl.testcase.AddNewCustomerPageTest" />
+			<class name="com.dcpl.testcase.SearchCustomerPageTest" />
+			<class name="com.dcpl.testcase.OrderHeaderPageTest" />
+			<class name="com.dcpl.testcase.OrderDetailPageTest" />
+			<class name="com.dcpl.testcase.CreditAndAdvancePageTest" />
+			<class name="com.dcpl.testcase.ReceiptVoucherPageTest" />-->
+			
+		    <class name="com.dcpl.testcase.CreateCustomerOrderTest" />
+		    <class name="com.dcpl.testcase.CashierReceiptPageTest" />
+		    <class name="com.dcpl.testcase.OrderConfirmationPageTest" />
+		    <class name="com.dcpl.testcase.StoreHeadConfirmationPageTest" />
+		   <!--   <class name="com.dcpl.failedtestcases.FailedTestRunner" />-->
+		    
+		   
+			
+		
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

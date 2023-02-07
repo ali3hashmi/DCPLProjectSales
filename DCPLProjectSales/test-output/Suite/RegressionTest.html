@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>TestNG:  RegressionTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>RegressionTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 31 18:47:04 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>146 seconds (146542 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Regression </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.dcpl.testcase.StoreHeadConfirmationPageTest.verifyingOrderConfirmationByStoreHead()'><b>verifyingOrderConfirmationByStoreHead</b><br>Test class: com.dcpl.testcase.StoreHeadConfirmationPageTest<br>Test method: Verifying store head order confirmation by logging into store head login page<br>Parameters: {fromday=31, password=Pass@123, orderno=, frommonth=Jan, orderstatus=Ready, tomonth=Jan, salesexecutive=Hashmi, fromyear=2023, today=31, hrms_id=11, toyear=2023}</td>
+<td></td>
+<td>15</td>
+<td>com.dcpl.testcase.StoreHeadConfirmationPageTest@b9afc07</td></tr>
+<tr>
+<td title='com.dcpl.testcase.CreateCustomerOrderTest.verifyCustomerOrderOrderKindNo()'><b>verifyCustomerOrderOrderKindNo</b><br>Test class: com.dcpl.testcase.CreateCustomerOrderTest<br>Parameters: {customerContactNumber=9746764977, dueDateYear=2023, firstGiftVoucherNumber=23, subCategory=1, chequeDay=31, intimation=Yes, payAdvAmount=5000.00, chequeNumber=415263, type=Debit Card, vendorCode=BKK, password=Pass@123, intimationMode=Mail, deliveryAddress=Yes, cardBank=AXIS, occasiondate=31, lengthSearch=7.5", Pieces=1, cardAmount=25000.00, adjustmentNumber=6, customerLoyaltyCard=, metalColor=1, adjustType=Payment Voucher, orderKind=New Order-NO, cardExpiryMonth=3, customerName=Ali Hashmi, fromWeightRange=1, metalWeightType=Range, hookTypeSearch=U Hook, occasionyear=2023, customerID=8, jewelType=Necklace, expectedWeightRange=100, adjustmentAmount=1000.00, segmentType=Gold, cardNumber=4152639685, occasion=Self, chequeDDType=cheque, toWeightRange=100, cardBankName=Axis Bank, cardExpiryYear=2024, bankName=Axis Bank, hrms_id=75, polishTypeSearch=Matt Finish, skinPurity=1, nameOnCard=Hashmi, dueDateMonth=Jan, salesExecutiveID=4, accNumber=5263415296857485, occasionmonth=Jan, accHolderName=Hashmi, cardType=RUPAY, branchName=Banshankari, authID=41526, payModesOption1=Cash, chequeMonth=Jan, payModesOption2=ChequeDD, chequeAmount=5000.00, MultipleMode=No, chequeYear=2023, settingTypeSearch=Open Setting, dueDateDay=31, mainCategory=1, secondGiftVoucherNumber=24, payAdvOption=Yes, noOfGiftVouchers=2, printNameInBill=No, occasionRemarks=Automation testing, CashAmount=5000.00}</td>
+<td></td>
+<td>45</td>
+<td>com.dcpl.testcase.CreateCustomerOrderTest@4bb4de6a</td></tr>
+<tr>
+<td title='com.dcpl.testcase.CashierReceiptPageTest.verifyReceiptsConfirmationByCashier()'><b>verifyReceiptsConfirmationByCashier</b><br>Test class: com.dcpl.testcase.CashierReceiptPageTest<br>Test method: Verifying receipt confirmation by logging into cashier login page<br>Parameters: {cashierhrms_id=15, cashierpassword=Pass@123}</td>
+<td></td>
+<td>11</td>
+<td>com.dcpl.testcase.CashierReceiptPageTest@8b87145</td></tr>
+<tr>
+<td title='com.dcpl.testcase.OrderConfirmationPageTest.verifyOrderConfirmationByCashier()'><b>verifyOrderConfirmationByCashier</b><br>Test class: com.dcpl.testcase.OrderConfirmationPageTest<br>Test method: Verifying order confirmation page by logging into cashier login page<br>Parameters: {fromday=31, password=Pass@123, orderno=, frommonth=Jan, tomonth=Jan, salesexecutive=Hashmi, fromyear=2023, today=31, hrms_id=15, toyear=2023}</td>
+<td></td>
+<td>14</td>
+<td>com.dcpl.testcase.OrderConfirmationPageTest@6483f5ae</td></tr>
+</table><p>
+</body>
+</html>
