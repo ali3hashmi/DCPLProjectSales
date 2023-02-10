@@ -13,24 +13,24 @@
       </run>
     </groups>
     <classes>
+      <class name="com.dcpl.testcase.OrderConfirmationPageTest">
+        <methods>
+          <include name="setUP"/>
+          <include name="closeWebApplication"/>
+          <include name="verifyOrderConfirmationByCashier" invocation-numbers="0 0 0"/>
+          <include name="afterSuite"/>
+          <include name="readConfig"/>
+        </methods>
+      </class> <!-- com.dcpl.testcase.OrderConfirmationPageTest -->
       <class name="com.dcpl.testcase.StoreHeadConfirmationPageTest">
         <methods>
-          <include name="verifyingOrderConfirmationByStoreHead" invocation-numbers="0"/>
+          <include name="verifyingOrderConfirmationByStoreHead" invocation-numbers="0 0 0"/>
           <include name="afterSuite"/>
           <include name="setUP"/>
           <include name="readConfig"/>
           <include name="closeWebApplication"/>
         </methods>
       </class> <!-- com.dcpl.testcase.StoreHeadConfirmationPageTest -->
-      <class name="com.dcpl.testcase.OrderConfirmationPageTest">
-        <methods>
-          <include name="setUP"/>
-          <include name="closeWebApplication"/>
-          <include name="verifyOrderConfirmationByCashier" invocation-numbers="0"/>
-          <include name="afterSuite"/>
-          <include name="readConfig"/>
-        </methods>
-      </class> <!-- com.dcpl.testcase.OrderConfirmationPageTest -->
     </classes>
   </test> <!-- RegressionTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
