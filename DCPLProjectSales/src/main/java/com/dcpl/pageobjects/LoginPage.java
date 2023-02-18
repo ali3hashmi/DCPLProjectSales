@@ -45,18 +45,7 @@ public class LoginPage extends Action {
 
 	}
 
-	public  OrderExecutionHomePage OrderExecutionLogin(String hrmsID,String password,OrderExecutionHomePage OEHomePage) throws InterruptedException {
-
-		super.scrollByVisibilityOfElement(getDriver(), this.hrmsID);
-		super.findElement(getDriver(), this.hrmsID);
-		super.type(this.hrmsID, hrmsID);
-		super.findElement(getDriver(), this.password);
-		super.type(this.password, password);
-		super.click(getDriver(), loginBtn);
-		Thread.sleep(5000);
-		return new OrderExecutionHomePage();
-
-	}
+	
 
 
 

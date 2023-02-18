@@ -68,8 +68,8 @@ public class ReceiptVoucherPageTest extends BaseClass{
 
 
 		Log.startTestCase("Receipt voucher page test");
-		salesHomePage=loginPage.salesLogin(hashMapValue.get("saleshrms_id"),
-				hashMapValue.get("salespassword"), salesHomePage);
+		salesHomePage=loginPage.salesLogin(hashMapValue.get("hrms_id"),
+				hashMapValue.get("password"), salesHomePage);
 		searchCustomerPage=salesHomePage.createNewCustomer(searchCustomerPage);
 		searchCustomerPage.searchCustomerDetail(hashMapValue.get("customerID"),
 				hashMapValue.get("customerName"),
@@ -118,6 +118,7 @@ public class ReceiptVoucherPageTest extends BaseClass{
 		String docnumber = receiptVoucherPage.getDocNumber();
 		System.out.println("Doc Number is " + docnumber);
 		String advAmt = receiptVoucherPage.passAdvanceAmount(hashMapValue.get("payAdvAmount"));
+		//System.out.println("The advance amount is = " + advAmt);
 		final double advanceAmount = Double.parseDouble(advAmt);
 
 

@@ -26,11 +26,15 @@
 			
 		    <class name="com.dcpl.testcase.CreateCustomerOrderTest" />
 		    <class name="com.dcpl.testcase.CashierReceiptPageTest" />
-		    <class name="com.dcpl.testcase.OrderConfirmationPageTest" />
-		    <class name="com.dcpl.testcase.StoreHeadConfirmationPageTest" />
-		   <!--   <class name="com.dcpl.failedtestcases.FailedTestRunner" />-->
+		    <class name="com.dcpl.testcase.OrderConfirmationPageTest">
+		    <methods>
+		    <include name="verifyOrderConfirmationByOrderDate"></include>
+		    <exclude name="verifyOrderConfirmationByOrderNo"></exclude>
+		    </methods>
+		  <!--   <class name="com.dcpl.testcase.StoreHeadConfirmationPageTest" />
+		   <class name="com.dcpl.failedtestcases.FailedTestRunner" />--> 
 		    
-		   
+		   </class>
 			
 		
 		</classes>

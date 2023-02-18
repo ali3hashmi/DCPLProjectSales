@@ -27,10 +27,10 @@ public class ReceiptVoucherPage extends Action {
 		PageFactory.initElements(getDriver(), this);
 	}
 
-	@FindBy(xpath = "//select[@name='docTypes']")
+	@FindBy(xpath = "//option[@value='O']")
 	private WebElement docType;
 
-	@FindBy(xpath = "//input[@name='docNo']")
+	@FindBy(xpath = "//input[@ng-model='voucher.docNo']")
 	private WebElement docNumber;
 
 	@FindBy(xpath = "//input[@name='amount']")
@@ -201,8 +201,8 @@ public class ReceiptVoucherPage extends Action {
 	public String getDocType() {
 
 		super.fluentWait(getDriver(), docType, 10);
-		String doctype = docType.getAttribute("value");
-		//System.out.println(doctype);
+		String doctype = docType.getText();
+		System.out.println(doctype);
 
 		super.explicitWait(getDriver(), docNumber, Duration.ofSeconds(10));
 		return doctype;
@@ -213,10 +213,10 @@ public class ReceiptVoucherPage extends Action {
 	public String getDocNumber() {
 
 		super.fluentWait(getDriver(), docNumber, 10);
-		String docnumber = docNumber.getText();
-		//System.out.println(docnumber);
+		String docnumber = docNumber.getAttribute("value");
 		super.explicitWait(getDriver(), advAmount, Duration.ofSeconds(15));
 		return docnumber;
+		
 	}
 
 	public String passAdvanceAmount(String advAmount) {
@@ -224,7 +224,6 @@ public class ReceiptVoucherPage extends Action {
 		//convert from double to string
 		//String advAmt =String.valueOf(advAmount); 
 		//double advAmnt = Double.parseDouble(advAmount);
-
 		super.type(this.advAmount, advAmount);
 		return advAmount;
 

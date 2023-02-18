@@ -63,8 +63,7 @@ public class OrderConfirmationPage extends Action {
 			String fromDay,
 			String toMonth,
 			String toYear,
-			String toDay,
-			String orderNo) {
+			String toDay) {
 		super.fluentWait(getDriver(), this.fromDate, 10);
 		super.click(getDriver(), this.fromDate);
 		super.selectByVisibleText(fromMonth, this.fromMonth);
@@ -125,24 +124,12 @@ public class OrderConfirmationPage extends Action {
 		}
 		
 		
-
-
-/*		List<WebElement> orderList = getDriver().findElements(By.xpath("//td[@class='text-center ng-binding']"));
-
-		for(WebElement orderEle : orderList) {
-
-			String gridOrderList = orderEle.getText();
-			
-			System.out.println(gridOrderList);
-			
-			if(gridOrderList.contains(orderNo)) {
-				
-				checkOrderNo.click();
-				break;
-			}
-			*/
-		
 			super.fluentWait(getDriver(), searchBtn, 10);
+	}
+	
+	public void setOrderNo(String orderNo) {
+		
+		super.type(this.orderNo, orderNo);
 	}
 	
 	public void clickOnSearchBtn() {

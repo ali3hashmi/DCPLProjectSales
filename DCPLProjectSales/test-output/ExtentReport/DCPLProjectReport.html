@@ -58,7 +58,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Feb 7, 2023 11:38:18 AM</span>
+			<span class='label blue darken-3 suite-start-time'>Feb 18, 2023 12:21:44 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -74,7 +74,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
@@ -118,10 +117,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='25%'><span class='strong'>2</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>4</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> skipped
                 </div>
             </div>
         </div>
@@ -139,17 +138,17 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyCustomerOrderOrderKindNo</span>
-						<span class='test-time'>Feb 7, 2023 11:38:38 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Feb 18, 2023 12:21:59 PM</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 7, 2023 11:38:38 AM</span>
-	<span class='label end-time'>Feb 7, 2023 11:39:26 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 48s+407ms</span>
+	<span class='label start-time'>Feb 18, 2023 12:21:59 PM</span>
+	<span class='label end-time'>Feb 18, 2023 12:22:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 33s+725ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -161,11 +160,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:39:26 AM</td>
+			<tr class='log' status='skip'>
+				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+				<td class='timestamp'>12:22:33 PM</td>
 				<td class='step-details'>
-						Pass Test case is: verifyCustomerOrderOrderKindNo
+						Skipped Test case is: verifyCustomerOrderOrderKindNo
 					
 				</td>
 			</tr>
@@ -176,15 +175,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>verifyReceiptsConfirmationByCashier</span>
-						<span class='test-time'>Feb 7, 2023 11:39:37 AM</span>
+						<span class='test-name'>verifyCustomerOrderOrderKindNo</span>
+						<span class='test-time'>Feb 18, 2023 12:22:46 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 7, 2023 11:39:37 AM</span>
-	<span class='label end-time'>Feb 7, 2023 11:39:51 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+220ms</span>
+	<span class='label start-time'>Feb 18, 2023 12:22:46 PM</span>
+	<span class='label end-time'>Feb 18, 2023 12:23:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 46s+599ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -198,7 +197,42 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>11:39:51 AM</td>
+				<td class='timestamp'>12:23:32 PM</td>
+				<td class='step-details'>
+						Pass Test case is: verifyCustomerOrderOrderKindNo
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyReceiptsConfirmationByCashier</span>
+						<span class='test-time'>Feb 18, 2023 12:23:44 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 18, 2023 12:23:44 PM</span>
+	<span class='label end-time'>Feb 18, 2023 12:23:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+578ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:23:55 PM</td>
 				<td class='step-details'>
 						Pass Test case is: verifyReceiptsConfirmationByCashier
 					
@@ -209,17 +243,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='3'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>verifyOrderConfirmationByCashier</span>
-						<span class='test-time'>Feb 7, 2023 11:40:02 AM</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='test-name'>verifyOrderConfirmationByOrderDate</span>
+						<span class='test-time'>Feb 18, 2023 12:24:07 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 7, 2023 11:40:02 AM</span>
-	<span class='label end-time'>Feb 7, 2023 11:40:25 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+624ms</span>
+	<span class='label start-time'>Feb 18, 2023 12:24:07 PM</span>
+	<span class='label end-time'>Feb 18, 2023 12:24:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+319ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -231,231 +265,12 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='skip'>
-				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-				<td class='timestamp'>11:40:25 AM</td>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:24:21 PM</td>
 				<td class='step-details'>
-						Skipped Test case is: verifyOrderConfirmationByCashier
+						Pass Test case is: verifyOrderConfirmationByOrderDate
 					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyOrderConfirmationByCashier</span>
-						<span class='test-time'>Feb 7, 2023 11:40:35 AM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 7, 2023 11:40:35 AM</span>
-	<span class='label end-time'>Feb 7, 2023 11:40:57 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+856ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='skip'>
-				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-				<td class='timestamp'>11:40:57 AM</td>
-				<td class='step-details'>
-						Skipped Test case is: verifyOrderConfirmationByCashier
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyOrderConfirmationByCashier</span>
-						<span class='test-time'>Feb 7, 2023 11:41:08 AM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 7, 2023 11:41:08 AM</span>
-	<span class='label end-time'>Feb 7, 2023 11:41:30 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+458ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:41:30 AM</td>
-				<td class='step-details'>
-						<span class='badge white-text red'>verifyOrderConfirmationByCashier - Test Case Failed</span>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:41:30 AM</td>
-				<td class='step-details'>
-						<span class='badge white-text red'>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [02c8c174a1880dd33949a2aacdff4013, actions {actions=[org.openqa.selenium.interactions.Sequence@18be3205]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56131}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56131/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 02c8c174a1880dd33949a2aacdff4013 - Test Case Failed</span>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:41:30 AM</td>
-				<td class='step-details'>
-						ScreenShot is Attached
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\USER\git\DCPLProjectSales\DCPLProjectSales/ScreenShots/verifyOrderConfirmationByCashier_19700101053000.png' src='C:\Users\USER\git\DCPLProjectSales\DCPLProjectSales/ScreenShots/verifyOrderConfirmationByCashier_19700101053000.png'>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyingOrderConfirmationByStoreHead</span>
-						<span class='test-time'>Feb 7, 2023 11:41:40 AM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 7, 2023 11:41:40 AM</span>
-	<span class='label end-time'>Feb 7, 2023 11:41:57 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+347ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='skip'>
-				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-				<td class='timestamp'>11:41:57 AM</td>
-				<td class='step-details'>
-						Skipped Test case is: verifyingOrderConfirmationByStoreHead
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  skip' status='skip' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyingOrderConfirmationByStoreHead</span>
-						<span class='test-time'>Feb 7, 2023 11:42:08 AM</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 7, 2023 11:42:08 AM</span>
-	<span class='label end-time'>Feb 7, 2023 11:42:24 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+43ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='skip'>
-				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-				<td class='timestamp'>11:42:24 AM</td>
-				<td class='step-details'>
-						Skipped Test case is: verifyingOrderConfirmationByStoreHead
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyingOrderConfirmationByStoreHead</span>
-						<span class='test-time'>Feb 7, 2023 11:42:34 AM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 7, 2023 11:42:34 AM</span>
-	<span class='label end-time'>Feb 7, 2023 11:42:51 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+815ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:42:50 AM</td>
-				<td class='step-details'>
-						<span class='badge white-text red'>verifyingOrderConfirmationByStoreHead - Test Case Failed</span>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:42:50 AM</td>
-				<td class='step-details'>
-						<span class='badge white-text red'>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20393b7290b58ac01a7ed6c82da9af02, actions {actions=[org.openqa.selenium.interactions.Sequence@4714f447]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56252/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 20393b7290b58ac01a7ed6c82da9af02 - Test Case Failed</span>
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:42:51 AM</td>
-				<td class='step-details'>
-						ScreenShot is Attached
-					<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\USER\git\DCPLProjectSales\DCPLProjectSales/ScreenShots/verifyingOrderConfirmationByStoreHead_19700101053000.png' src='C:\Users\USER\git\DCPLProjectSales\DCPLProjectSales/ScreenShots/verifyingOrderConfirmationByStoreHead_19700101053000.png'>
 				</td>
 			</tr>
 		</tbody>
@@ -491,7 +306,7 @@ Session ID: 20393b7290b58ac01a7ed6c82da9af02 - Test Case Failed</span>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -503,19 +318,19 @@ Session ID: 20393b7290b58ac01a7ed6c82da9af02 - Test Case Failed</span>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 7, 2023 11:38:18 AM</div>
+					<div class='panel-lead'>Feb 18, 2023 12:21:44 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 7, 2023 11:42:57 AM</div>
+			 		<div class='panel-lead'>Feb 18, 2023 12:24:27 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 4m 39s+237ms</div>
+					<div class='panel-lead'>0h 2m 43s+5ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -558,14 +373,14 @@ Session ID: 20393b7290b58ac01a7ed6c82da9af02 - Test Case Failed</span>
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 8,
-				passParent: 2,
-				failParent: 2,
+                parentCount: 4,
+				passParent: 3,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 4,
-				exceptionsParent: 6,
+				skipParent: 1,
+				exceptionsParent: 1,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -590,7 +405,7 @@ Session ID: 20393b7290b58ac01a7ed6c82da9af02 - Test Case Failed</span>
 		</script>
 		<script>
 			var timeline = {
-			        "verifyCustomerOrderOrderKindNo":48.407,"verifyReceiptsConfirmationByCashier":14.22,"verifyOrderConfirmationByCashier":22.624,"verifyOrderConfirmationByCashier":21.856,"verifyOrderConfirmationByCashier":22.458,"verifyingOrderConfirmationByStoreHead":16.347,"verifyingOrderConfirmationByStoreHead":16.043,"verifyingOrderConfirmationByStoreHead":16.815
+			        "verifyCustomerOrderOrderKindNo":33.725,"verifyCustomerOrderOrderKindNo":46.599,"verifyReceiptsConfirmationByCashier":11.578,"verifyOrderConfirmationByOrderDate":14.319
 			};
 		</script>
 	
