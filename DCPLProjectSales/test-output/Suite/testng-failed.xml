@@ -13,15 +13,15 @@
       </run>
     </groups>
     <classes>
-      <class name="com.dcpl.testcase.CreateCustomerOrderTest">
+      <class name="com.dcpl.testcase.OrderConfirmationPageTest">
         <methods>
-          <include name="closeWebApplication"/>
           <include name="setUP"/>
+          <include name="closeWebApplication"/>
           <include name="afterSuite"/>
-          <include name="verifyCustomerOrderOrderKindNo" invocation-numbers="0"/>
           <include name="readConfig"/>
+          <include name="verifyOrderConfirmationByOrderDate" invocation-numbers="0 0 0"/>
         </methods>
-      </class> <!-- com.dcpl.testcase.CreateCustomerOrderTest -->
+      </class> <!-- com.dcpl.testcase.OrderConfirmationPageTest -->
     </classes>
   </test> <!-- RegressionTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

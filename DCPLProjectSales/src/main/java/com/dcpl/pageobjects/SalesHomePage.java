@@ -62,12 +62,12 @@ public class SalesHomePage extends Action{
 		return salesPageHomeText;
 	}
 	
-	public LoginPage salesLogout(LoginPage loginPgae) {
+	public LoginPage salesLogout(LoginPage loginPgae) throws InterruptedException {
 		
 		super.click(getDriver(), salesLogoutNavigation);
 		super.fluentWait(getDriver(), salesLogout, 5);
 		super.click(getDriver(), salesLogout);
-		//super.fluentWait(getDriver(), , 10);
+		Thread.sleep(3000);
 		super.Alert(getDriver());
 		return new LoginPage();
 	}

@@ -41,7 +41,7 @@ public class SalesLogoutPageTest extends BaseClass {
 	}
 
 
-	@Test(groups = {"Smoke","Sanity"},dataProvider = "salesLoginCredentials",dataProviderClass = SalesDataProvider.class,
+	@Test(groups = {"Smoke","Sanity","Regression"},dataProvider = "salesLoginCredentials",dataProviderClass = SalesDataProvider.class,
 			priority = 0,description = "Performing user logout for sales portal")
 	public void salesLogoutTest(String hrmsid,String password) throws Throwable {
 

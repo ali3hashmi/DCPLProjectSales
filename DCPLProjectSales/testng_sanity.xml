@@ -21,11 +21,12 @@
 			<class name="com.dcpl.testcase.SearchCustomerPageTest" />
 			<class name="com.dcpl.testcase.OrderHeaderPageTest" />
 			<class name="com.dcpl.testcase.OrderDetailPageTest" />
-			<class name="com.dcpl.testcase.CreditAndAdvancePageTest" />-->
+			<class name="com.dcpl.testcase.CreditAndAdvancePageTest" />
 			<class name="com.dcpl.testcase.ReceiptVoucherPageTest" />
 			<class name="com.dcpl.testcase.OrderConfirmationPageTest" />
 			<class name="com.dcpl.testcase.CashierReceiptPageTest" />
-		    <class name="com.dcpl.testcase.StoreHeadConfirmationPageTest" />
+		    <class name="com.dcpl.testcase.StoreHeadConfirmationPageTest" />-->
+		    <class name="com.dcpl.testcase.SalesLogoutPageTest" />
 		
 		</classes>
 	</test> <!-- Test -->

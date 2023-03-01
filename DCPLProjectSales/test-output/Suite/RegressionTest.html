@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>RegressionTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Feb 18 12:21:45 IST 2023</td>
+<td>Started on:</td><td>Wed Mar 01 16:03:50 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>162 seconds (162239 ms)</td>
+<tr><td>Total time:</td><td>75 seconds (75648 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>Regression </td>
 </tr><tr>
@@ -67,28 +67,58 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.dcpl.testcase.CreateCustomerOrderTest.verifyCustomerOrderOrderKindNo()'><b>verifyCustomerOrderOrderKindNo</b><br>Test class: com.dcpl.testcase.CreateCustomerOrderTest<br>Parameters: {customerContactNumber=9746764977, dueDateYear=2023, firstGiftVoucherNumber=23, subCategory=1, chequeDay=28, intimation=Yes, payAdvAmount=5000.00, chequeNumber=415263, type=Debit Card, vendorCode=BKK, password=Pass@123, intimationMode=Mail, deliveryAddress=Yes, cardBank=AXIS, occasiondate=28, lengthSearch=7.5", Pieces=1, cardAmount=25000.00, adjustmentNumber=6, customerLoyaltyCard=, metalColor=1, adjustType=Payment Voucher, orderKind=New Order-NO, cardExpiryMonth=3, customerName=Ali Hashmi, fromWeightRange=1, metalWeightType=Range, hookTypeSearch=U Hook, occasionyear=2023, customerID=8, jewelType=Necklace, expectedWeightRange=100, adjustmentAmount=1000.00, segmentType=Gold, cardNumber=4152639685, occasion=Self, chequeDDType=cheque, toWeightRange=100, cardBankName=Axis Bank, cardExpiryYear=2024, bankName=Axis Bank, hrms_id=75, polishTypeSearch=Matt Finish, skinPurity=1, nameOnCard=Hashmi, dueDateMonth=Feb, salesExecutiveID=4, accNumber=5263415296857485, occasionmonth=Feb, accHolderName=Hashmi, cardType=RUPAY, branchName=Banshankari, authID=41526, payModesOption1=Cash, chequeMonth=Feb, payModesOption2=ChequeDD, chequeAmount=5000.00, MultipleMode=No, chequeYear=2023, settingTypeSearch=Open Setting, dueDateDay=28, mainCategory=1, secondGiftVoucherNumber=24, payAdvOption=Yes, noOfGiftVouchers=2, printNameInBill=No, occasionRemarks=Automation testing, CashAmount=5000.00}</td>
-<td></td>
-<td>46</td>
-<td>com.dcpl.testcase.CreateCustomerOrderTest@2a7f1f10</td></tr>
-<tr>
-<td title='com.dcpl.testcase.CashierReceiptPageTest.verifyReceiptsConfirmationByCashier()'><b>verifyReceiptsConfirmationByCashier</b><br>Test class: com.dcpl.testcase.CashierReceiptPageTest<br>Test method: Verifying receipt confirmation by logging into cashier login page<br>Parameters: {cashierhrms_id=15, cashierpassword=Pass@123}</td>
-<td></td>
-<td>11</td>
-<td>com.dcpl.testcase.CashierReceiptPageTest@1ed4ae0f</td></tr>
-<tr>
-<td title='com.dcpl.testcase.OrderConfirmationPageTest.verifyOrderConfirmationByOrderDate()'><b>verifyOrderConfirmationByOrderDate</b><br>Test class: com.dcpl.testcase.OrderConfirmationPageTest<br>Test method: Verifying order confirmation by passing from and to date<br>Parameters: {fromday=18, password=Pass@123, orderno=, frommonth=Feb, tomonth=Feb, salesexecutive=Hashmi, fromyear=2023, today=18, hrms_id=15, toyear=2023}</td>
-<td></td>
-<td>14</td>
-<td>com.dcpl.testcase.OrderConfirmationPageTest@54c5a2ff</td></tr>
+<td title='com.dcpl.testcase.OrderConfirmationPageTest.verifyOrderConfirmationByOrderDate()'><b>verifyOrderConfirmationByOrderDate</b><br>Test class: com.dcpl.testcase.OrderConfirmationPageTest<br>Test method: Verifying order confirmation by passing from and to date<br>Parameters: {fromday=15, password=Pass@123, orderno=, frommonth=Feb, tomonth=Feb, salesexecutive=Hashmi, fromyear=2023, today=28, hrms_id=15, toyear=2023}</td>
+<td><div><pre>java.lang.AssertionError: expected [Order Confirm Cashier - Sales] but found [Sales - Dashboard - Sales]
+	at com.dcpl.testcase.OrderConfirmationPageTest.verifyOrderConfirmationByOrderDate(OrderConfirmationPageTest.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace855894174", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace855894174'><pre>java.lang.AssertionError: expected [Order Confirm Cashier - Sales] but found [Sales - Dashboard - Sales]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.dcpl.testcase.OrderConfirmationPageTest.verifyOrderConfirmationByOrderDate(OrderConfirmationPageTest.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>com.dcpl.testcase.OrderConfirmationPageTest@2892d68</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -98,55 +128,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.dcpl.testcase.CreateCustomerOrderTest.verifyCustomerOrderOrderKindNo()'><b>verifyCustomerOrderOrderKindNo</b><br>Test class: com.dcpl.testcase.CreateCustomerOrderTest<br>Parameters: {customerContactNumber=9746764977, dueDateYear=2023, firstGiftVoucherNumber=23, subCategory=1, chequeDay=28, intimation=Yes, payAdvAmount=5000.00, chequeNumber=415263, type=Debit Card, vendorCode=BKK, password=Pass@123, intimationMode=Mail, deliveryAddress=Yes, cardBank=AXIS, occasiondate=28, lengthSearch=7.5", Pieces=1, cardAmount=25000.00, adjustmentNumber=6, customerLoyaltyCard=, metalColor=1, adjustType=Payment Voucher, orderKind=New Order-NO, cardExpiryMonth=3, customerName=Ali Hashmi, fromWeightRange=1, metalWeightType=Range, hookTypeSearch=U Hook, occasionyear=2023, customerID=8, jewelType=Necklace, expectedWeightRange=100, adjustmentAmount=1000.00, segmentType=Gold, cardNumber=4152639685, occasion=Self, chequeDDType=cheque, toWeightRange=100, cardBankName=Axis Bank, cardExpiryYear=2024, bankName=Axis Bank, hrms_id=75, polishTypeSearch=Matt Finish, skinPurity=1, nameOnCard=Hashmi, dueDateMonth=Feb, salesExecutiveID=4, accNumber=5263415296857485, occasionmonth=Feb, accHolderName=Hashmi, cardType=RUPAY, branchName=Banshankari, authID=41526, payModesOption1=Cash, chequeMonth=Feb, payModesOption2=ChequeDD, chequeAmount=5000.00, MultipleMode=No, chequeYear=2023, settingTypeSearch=Open Setting, dueDateDay=28, mainCategory=1, secondGiftVoucherNumber=24, payAdvOption=Yes, noOfGiftVouchers=2, printNameInBill=No, occasionRemarks=Automation testing, CashAmount=5000.00}</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=110.0.5481.78)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [028b5e3a9e3b8dca347128b7a67c74e5, getElementText {id=2ed0cad2-4ce9-49b8-903a-d3ac381a92c1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.78, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62009/devtoo..., se:cdpVersion: 110.0.5481.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (028b5e3a9e3b8dca347128b7a67c74e5)] -&gt; xpath: //a[@class=&apos;ng-binding&apos;]]
-Session ID: 028b5e3a9e3b8dca347128b7a67c74e5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
-	at com.dcpl.pageobjects.OrderDetailPage.chooseAttributeDetailsForLength(OrderDetailPage.java:319)
-	at com.dcpl.testcase.CreateCustomerOrderTest.verifyCustomerOrderOrderKindNo(CreateCustomerOrderTest.java:108)
+<td title='com.dcpl.testcase.OrderConfirmationPageTest.verifyOrderConfirmationByOrderDate()'><b>verifyOrderConfirmationByOrderDate</b><br>Test class: com.dcpl.testcase.OrderConfirmationPageTest<br>Test method: Verifying order confirmation by passing from and to date<br>Parameters: {fromday=15, password=Pass@123, orderno=, frommonth=Feb, tomonth=Feb, salesexecutive=Hashmi, fromyear=2023, today=28, hrms_id=15, toyear=2023}</td>
+<td><div><pre>java.lang.AssertionError: expected [Order Confirm Cashier - Sales] but found [Sales - Dashboard - Sales]
+	at com.dcpl.testcase.OrderConfirmationPageTest.verifyOrderConfirmationByOrderDate(OrderConfirmationPageTest.java:58)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace526968040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace526968040'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=110.0.5481.78)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [028b5e3a9e3b8dca347128b7a67c74e5, getElementText {id=2ed0cad2-4ce9-49b8-903a-d3ac381a92c1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.78, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62009/devtoo..., se:cdpVersion: 110.0.5481.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (028b5e3a9e3b8dca347128b7a67c74e5)] -&gt; xpath: //a[@class=&apos;ng-binding&apos;]]
-Session ID: 028b5e3a9e3b8dca347128b7a67c74e5
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
-	at com.dcpl.pageobjects.OrderDetailPage.chooseAttributeDetailsForLength(OrderDetailPage.java:319)
-	at com.dcpl.testcase.CreateCustomerOrderTest.verifyCustomerOrderOrderKindNo(CreateCustomerOrderTest.java:108)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace305334212", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace305334212'><pre>java.lang.AssertionError: expected [Order Confirm Cashier - Sales] but found [Sales - Dashboard - Sales]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.dcpl.testcase.OrderConfirmationPageTest.verifyOrderConfirmationByOrderDate(OrderConfirmationPageTest.java:58)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -176,8 +170,53 @@ Session ID: 028b5e3a9e3b8dca347128b7a67c74e5
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>33</td>
-<td>com.dcpl.testcase.CreateCustomerOrderTest@2a7f1f10</td></tr>
+<td>10</td>
+<td>com.dcpl.testcase.OrderConfirmationPageTest@2892d68</td></tr>
+<tr>
+<td title='com.dcpl.testcase.OrderConfirmationPageTest.verifyOrderConfirmationByOrderDate()'><b>verifyOrderConfirmationByOrderDate</b><br>Test class: com.dcpl.testcase.OrderConfirmationPageTest<br>Test method: Verifying order confirmation by passing from and to date<br>Parameters: {fromday=15, password=Pass@123, orderno=, frommonth=Feb, tomonth=Feb, salesexecutive=Hashmi, fromyear=2023, today=28, hrms_id=15, toyear=2023}</td>
+<td><div><pre>java.lang.AssertionError: expected [Order Confirm Cashier - Sales] but found [Sales - Dashboard - Sales]
+	at com.dcpl.testcase.OrderConfirmationPageTest.verifyOrderConfirmationByOrderDate(OrderConfirmationPageTest.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace481952545", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace481952545'><pre>java.lang.AssertionError: expected [Order Confirm Cashier - Sales] but found [Sales - Dashboard - Sales]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.dcpl.testcase.OrderConfirmationPageTest.verifyOrderConfirmationByOrderDate(OrderConfirmationPageTest.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>com.dcpl.testcase.OrderConfirmationPageTest@2892d68</td></tr>
 </table><p>
 </body>
 </html>

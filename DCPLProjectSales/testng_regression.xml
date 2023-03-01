@@ -30,11 +30,13 @@
 		    <methods>
 		    <include name="verifyOrderConfirmationByOrderDate"></include>
 		    <exclude name="verifyOrderConfirmationByOrderNo"></exclude>
+		    <exclude name="verifyOrderConfirmationPageSearchGridHeaders"></exclude>
 		    </methods>
-		  <!--   <class name="com.dcpl.testcase.StoreHeadConfirmationPageTest" />
-		   <class name="com.dcpl.failedtestcases.FailedTestRunner" />--> 
+		    </class>
+		   <class name="com.dcpl.testcase.StoreHeadConfirmationPageTest" />
+		   <!--    <class name="com.dcpl.failedtestcases.FailedTestRunner" />--> 
 		    
-		   </class>
+		   
 			
 		
 		</classes>
